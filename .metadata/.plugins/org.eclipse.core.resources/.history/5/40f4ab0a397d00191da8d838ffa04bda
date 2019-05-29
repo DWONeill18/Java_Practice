@@ -1,0 +1,14 @@
+package com.qa.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Install {
+	
+	public static void main(String[]args) {
+		
+		Connection conn = DriverManager.getConnection("jdbc.mysql://localhost", "root", "password");
+		
+	}
+
+}

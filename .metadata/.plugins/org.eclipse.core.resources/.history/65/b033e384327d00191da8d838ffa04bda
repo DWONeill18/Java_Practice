@@ -1,0 +1,42 @@
+package com.qa.Hospital;
+
+import java.util.ArrayList;
+
+public class Patient {
+	
+	private String name;
+	private String medicine;
+	private int	length;
+
+	public static ArrayList<Patient> list = new ArrayList<Patient>();
+//	list.add(patient1);
+//	list.add(patient2);
+	
+	public Patient(String name, String medicine, int length) {
+		
+		this.name = name;
+		this.medicine = medicine;
+		this.length = length;
+		
+		
+	}
+
+
+	public String getName() {
+		
+		return name;
+	}
+	
+	public String getMedicine() {
+		
+		return medicine;
+	
+	}
+	
+	public int getLength() {
+		
+		return length;
+		
+	}
+	
+}

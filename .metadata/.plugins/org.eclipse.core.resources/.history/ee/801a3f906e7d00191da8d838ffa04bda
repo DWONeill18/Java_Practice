@@ -1,0 +1,24 @@
+package com.qa.hospitaltest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.qa.Hospital.Patient;
+
+
+
+public class HospitalTest {
+
+	@Test
+	
+	public void patients() {
+	
+	Patient patient2 = new Patient("Ian", "paracetamol", 4);
+	
+	assertEquals("error is here", "paracetamol", patient2.getMedicine() );
+	
+	}
+	
+	}
+	

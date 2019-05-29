@@ -1,0 +1,60 @@
+package com.qa.accountTest;
+
+import org.junit.Assert.*;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+public class AccountTest 
+ 
+
+{
+
+
+	@Test
+	public void createAccount() {
+		
+	
+		Account account = new Account();
+		account.setID(0);
+		account.setFirstName("Chris");
+		account.setLastName("Perrins");
+		account.setAccountNumber(3);
+		
+		int id = account.getId();
+		String firstName = account.getFirstName();
+		String lastName = account.getLastName();
+		int accountNum = account.getAccountNumber();
+	
+		assertEquals("wrong id", 0 , id);
+		assertEquals("wrong firstName", "Chris", firstName));
+		assertEquals("wrong lastName", "Perrins", lastName));
+		assertEquals("wrong accountNum", 3, AccountNumber));
+		
+	}
+	
+	@Test
+	public void accountRepositioryMapTest() {
+		
+		AccountRepositoryMapTest(){
+		
+			Account a = new Account();
+			int id = 2;
+			a.setId(id);
+			a.setFirstName("Chris");
+			arm.add(a);
+			Account retrieved = arm.retrieve(id);
+			assertEquals("Wrong Account Retrieved", )
+			assertEquals("Wrong Account Retrieved", retrieved.getFirstname());
+			
+			
+		}
+		
+	}
+	
+	
+		
+	
+}
+

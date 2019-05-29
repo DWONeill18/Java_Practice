@@ -1,0 +1,19 @@
+package com.qa.jdbc;
+
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Install {
+	
+	public static void main(String[]args) throws SQLException {
+		
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost", "root", "password");
+		
+		Statement stmt = conn.createStatement();
+		String sql = "create database Lidl";
+		stmt.execute();
+	}
+
+}

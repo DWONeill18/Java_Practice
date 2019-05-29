@@ -1,0 +1,42 @@
+package com.qa.accountTest;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+public class AccountTest 
+ 
+
+{
+
+	
+	Account account = new Account();
+	account.setID(0);
+	account.setFirstName("Chris");
+	account.setLastName("Perrins");
+	account.setAccountNumber(3);
+
+	@Test
+	public void createAccount() {
+		
+	
+		int id = account.getId();
+		String firstName = account.getFirstName();
+		String lastName = account.getLastName();
+		int accountNum = account.getAccountNumber();
+	
+		assertEquals("wrong id", 0 , id);
+		assertEquals("wrong firstName", "Chris", firstName));
+		assertEquals("wrong lastName", "Perrins", lastName));
+		assertEquals("wrong accountNum", 3, AccountNumber));
+		
+	}
+	
+	@Test
+	
+	
+	
+	
+	
+}
+

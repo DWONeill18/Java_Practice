@@ -1,0 +1,16 @@
+package com.qa.app;
+
+public interface AccountRepository {
+	
+	public void add(Account account); 
+		
+		
+		
+	
+	
+	public void retrieve(Integer id); 
+		
+		
+
+
+}

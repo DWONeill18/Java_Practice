@@ -1,0 +1,32 @@
+package com.qa.Hospital;
+
+import java.util.ArrayList;
+
+public class Nurse {
+	
+	private String name;
+	
+	private static ArrayList<Nurse> nlist = new ArrayList<Nurse>();
+//	list.add(patient1);
+//	list.add(patient2);
+	
+	public Nurse(String name) {
+		
+		this.name = name;
+		list.add(this);
+		
+	}
+		
+		public static ArrayList<Patient>  getList(){
+			
+			return list;
+		}
+
+
+		public String getName() {
+			
+			return name;
+		}
+
+
+}

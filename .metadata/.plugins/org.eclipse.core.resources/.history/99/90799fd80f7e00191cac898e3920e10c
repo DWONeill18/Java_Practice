@@ -1,0 +1,31 @@
+package com.qa.TerrainGame;
+
+public class Player {
+	
+	private int locationX = 0;
+	private int locationY = 0;
+	private float distanceFrom;
+	
+public Player(int locationX, int locationY, float distanceFrom) {
+		
+		this.locationX = locationX;
+		this.locationY = locationY;
+		this.distanceFrom = distanceFrom;
+		
+}
+		
+	public void walking() {
+		
+		System.out.println("walking..");
+		
+		
+		distanceFrom = 
+		
+		
+	}
+	
+
+	
+	
+	
+}

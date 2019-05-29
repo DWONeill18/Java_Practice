@@ -1,0 +1,18 @@
+package com.qa.hashMap;
+
+public class HashMap {
+	
+	public static void main(String[]args) {
+		
+		HashMap<String, hash> myMap = new HashMap<String, hash>();
+		
+		String s = "A bird has wings";
+		
+		myMap.put("Bird", s);
+		
+		System.out.println(MyMap.get("Bird"));
+		
+	}
+	
+
+}

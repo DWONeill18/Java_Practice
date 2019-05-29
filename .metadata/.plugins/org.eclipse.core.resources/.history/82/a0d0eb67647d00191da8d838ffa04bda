@@ -1,0 +1,16 @@
+package com.qa.Hospital;
+
+
+public class Nurse {
+		
+		
+		public String name;
+		
+		public Nurse(String name) {
+			
+			this.name = name;
+
+
+		}
+		
+}

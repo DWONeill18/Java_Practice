@@ -1,0 +1,106 @@
+package com.qa.TerrainGame;
+
+import java.util.ArrayList;
+
+public class Player{
+	
+	private int locationX = 0;
+	private int locationY = 0;
+	
+	private static ArrayList<Player> player = new ArrayList<Player>();	
+	
+	
+public Player(int locationX, int locationY) {
+		
+		this.locationX = locationX;
+		this.locationY = locationY;
+		
+	
+		
+		
+		
+}
+		
+	public void walking() {
+		
+		
+boolean begin = true;
+		
+		while (begin) {
+		
+		System.out.println("Try \"north\",\"south\",\"east\", or \"west\". If you need a helicoptor for extraction try \"exit\". ");
+		String t = input().toLowerCase();
+				
+		if (t.equals("north")) {
+			
+			Direction searching = Direction.NORTH;
+			System.out.println(searching.getWay());
+		}
+		
+		
+		else if (t.equals("south")) {
+			
+			Direction searching = Direction.SOUTH;
+			System.out.println(searching.getWay());
+
+		}
+		
+		else if (t.equals("east")) {
+			
+			Direction searching = Direction.EAST;
+			System.out.println(searching.getWay());
+
+			
+		}
+		
+		else if (t.equals("west")) {
+			
+			Direction searching = Direction.WEST;
+			System.out.println(searching.getWay());
+			
+		}
+		
+		else if (t.equals("exit")) {
+			System.out.println("Heli is here!");
+			break;
+			
+		}
+		
+	
+	
+		else {
+			
+			System.out.println("I think you might be lost friend..");
+
+		}
+		
+		}
+		
+	}
+		
+		public float where() {
+	
+		distanceFrom = Math.sqrt( Math.pow( (featureX - locationX), 2 ) + Math.pow( (featureY - locationY), 2 ) ) ;
+
+			
+		}
+
+		public static ArrayList<Player> getPlayer() {
+			return player;
+		}
+
+		public static void setPlayer(ArrayList<Player> player) {
+			Player.player = player;
+		}
+		
+		
+		
+		
+		
+	
+	
+
+	 
+	
+	
+}

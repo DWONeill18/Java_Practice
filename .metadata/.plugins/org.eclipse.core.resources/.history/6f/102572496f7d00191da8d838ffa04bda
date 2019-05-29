@@ -1,0 +1,38 @@
+package com.qa.hospitaltest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.qa.Hospital.Doctor;
+import com.qa.Hospital.Patient;
+
+
+
+public class HospitalTest {
+
+	@Test
+	
+	public void checkTreatment() {
+	
+	Patient patient2 = new Patient("Ian", "paracetamol", 4);
+	
+	assertEquals("error is here", "paracetamol", patient2.getMedicine() );
+	
+	}
+	
+	@Test
+	
+	public void recordTreatment() {
+	
+	Patient patient2 = new Patient("Ian", "paracetamol", 4);
+	Doctor doctor = new Doctor();
+	list.add(patient);
+	
+	
+	assertEquals("error is here", "paracetamol", patient2.getMedicine() );
+	
+	}
+	
+	}
+	

@@ -1,0 +1,126 @@
+package com.qa.TerrainGame;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+import com.qa.Hospital.Nurse;
+import com.qa.Hospital.Patient;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+ 
+    	Feature feature1 = new Feature("Tree", 5, 4);
+    	Feature feature2 = new Feature("Treasure", 0, 4);
+    	
+    	Player player = new Player(0, 0);
+    	
+
+//    	System.out.println(feature1.getFeatureX());
+//    	System.out.println(player.getLocationX());
+    	
+    	
+        System.out.println( "Grey foggy clouds float oppressively close to you, \r\n" + 
+        		"reflected in the murky grey water which reaches up your shins.\r\n" + 
+        		"Some black plants barely poke out of the shallow water.\r\n" + 
+        		"You notice a small watch-like device in your left hand.  \r\n" + 
+        		"It has hands like a watch, but the hands don't seem to tell time. \r\n" +
+//    			"Try \"north\",\"south\",\"east\",or \"west\"\r\n" + 
+        		"" );
+        	
+    		
+    		boolean begin = true;
+    				
+    				while (begin) {
+    				
+    				System.out.println("Try \"north\",\"south\",\"east\", or \"west\". If you need a helicoptor for extraction try \"exit\". ");
+    				String t = input().toLowerCase();
+    						
+    				if (t.equals("north")) {
+    					
+//    					locationY = locationY + 1;
+    					Direction searching = Direction.NORTH;
+    					System.out.println(searching.getWay());
+    					System.out.println(Player.where());
+
+    				}
+    				
+    				
+    				else if (t.equals("south")) {
+    					
+//    					locationY = locationY - 1;
+    					Direction searching = Direction.SOUTH;
+    					System.out.println(searching.getWay());
+    					System.out.println(Player.where());
+
+    				}
+    				
+    				else if (t.equals("east")) {
+    					
+//    					locationX = locationX + 1;
+    					Direction searching = Direction.EAST;
+    					System.out.println(searching.getWay());
+    					System.out.println(Player.where());
+
+    					
+    				}
+    				
+    				else if (t.equals("west")) {
+    					
+//    					locationX = locationY -1;
+    					Direction searching = Direction.WEST;
+    					System.out.println(searching.getWay());
+    					System.out.println(Player.where());
+
+    				}
+    				
+    				else if (t.equals("exit")) {
+    					System.out.println("Heli is here!");
+    					break;
+    					
+    				}
+    				
+    			
+    			
+    				else {
+    					
+    					System.out.println("I think you might be lost friend..");
+
+    				}
+    				
+    				}
+    				
+    			}
+    
+    public static String input() {
+		
+		Scanner s = new Scanner(System.in);
+		String input = s.nextLine();
+		return input;
+	}
+	
+        
+    	
+//    	System.out.println("this blurb");
+    	
+//    	Direction searching = Direction.NORTH;
+//		
+//		System.out.println(searching);
+//		System.out.println(searching.getWay());
+//		mylist.add(input());
+//		System.out.println(mylist);
+//		System.out.println(mylist);
+		
+    	
+//		ArrayList<String> mylist = new ArrayList<String>();
+		
+		
+		
+    }
+
+	
+		
+		
+

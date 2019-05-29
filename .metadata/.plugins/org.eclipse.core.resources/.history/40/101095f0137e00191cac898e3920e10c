@@ -1,0 +1,51 @@
+package com.qa.TerrainGame;
+
+import java.util.ArrayList;
+
+
+public class Feature {
+	
+	private String name;
+	private int locationX;
+	private int locationY;
+	
+	private static ArrayList<Feature> list = new ArrayList<Feature>();
+
+//	list.add(4);
+	
+	public Feature(String name, int locationX, int locationY) {
+		
+		this.name = name;
+		this.locationX = locationX;
+		this.locationY = locationY;
+	
+		list.add(this);
+		
+		
+	}
+	
+	
+
+	public static ArrayList<Feature>  getList(){
+		
+		return list;
+	}
+
+
+	public String getName() {
+		
+		return name;
+	}
+	
+	public int getLocationX() {
+		
+		return locationX;
+	}
+	
+	public int getLocationY() {
+		
+		return locationY;
+	}
+	
+
+}

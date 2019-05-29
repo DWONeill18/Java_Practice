@@ -1,0 +1,84 @@
+package com.qa.TerrainGame;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
+
+/**
+ * Unit test for simple App.
+ */
+public class AppTest 
+    extends TestCase
+{
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public AppTest( String testName )
+    {
+        super( testName );
+    }
+
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( AppTest.class );
+    }
+
+    /**
+     * Rigourous Test :-)
+     * Test is correct gives green bar
+     */
+    public void testApp()
+    {
+        assertTrue( true );
+    }
+    
+    /**
+     * Rigourous Test :-)
+     * Test is incorrect gives red bar
+     */
+    public void testApp2()
+    {
+        assertTrue( false );
+    }
+    
+//    
+//    @Test
+//    
+//    public void objectTest() 
+//    {
+//    	App app = new App;s
+//    	
+//    	
+//    }
+    
+    @Test
+    
+    public String blurboutputTest() 
+    {
+    	App app = new App();
+    	assertEquals("error blurb not outputted", "this blurb", System.out.println("this blurb")), 
+    	
+    }
+    
+ @Test
+ 
+ public void objectTest() 
+ {
+ 	App app = new App;
+ 	
+ 	
+ }
+ 
+    
+}
+
+
+
+
+
+

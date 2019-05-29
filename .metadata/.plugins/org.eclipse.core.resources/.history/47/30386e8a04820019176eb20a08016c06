@@ -1,0 +1,16 @@
+package com.qa.calculator;
+
+public class Addition {
+	
+
+	public float add() {
+		
+		float num1 = 2;
+		float num2 = 2;
+		
+	
+		return num1 + num2;
+		
+	}
+	
+}

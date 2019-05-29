@@ -1,0 +1,12 @@
+package com.qa.TerrainGame;
+
+public class Tree extends Feature {
+
+	public Tree(String name) {
+		super(name);
+		
+	}
+
+	
+	
+}

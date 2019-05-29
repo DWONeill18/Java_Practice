@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.qa.enums.Enums.java&apos; to &apos;Day.java&apos;&#x0D;&#x0A;- Original project: &apos;Enums&apos;&#x0D;&#x0A;- Original element: &apos;com.qa.enums.Enums.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.qa.enums.Day.java&apos;" description="Rename compilation unit &apos;Enums.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.qa.enums{Enums.java" name="Day.java" references="false" stamp="1558606290075" version="1.0"/>
+</session>

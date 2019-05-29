@@ -1,0 +1,13 @@
+package com.qa.jdbc;
+
+import java.sql.Connection;
+
+public class Install {
+	
+	public static void main(String[]args) {
+		
+		Connection conn = DriverManger.		
+		
+	}
+
+}

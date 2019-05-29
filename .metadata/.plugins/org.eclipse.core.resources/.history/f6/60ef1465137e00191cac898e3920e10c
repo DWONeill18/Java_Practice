@@ -1,0 +1,35 @@
+package com.qa.TerrainGame;
+
+public class Tree extends Feature {
+	
+	private int locationX = 5;
+	private int locationY = 4;
+
+
+	public Tree(String name, int locationX, int locationY) {
+		
+		super(name);
+		this.locationX = locationX;
+		this.locationY = locationY;
+	
+		
+	}
+	
+	public String getName() {
+		
+		return getName();
+	}
+
+	public int getLocationX() {
+		
+		return locationX;
+	}
+
+	public int getLocationY() {
+		
+		return locationY;
+	}
+
+	
+	
+}

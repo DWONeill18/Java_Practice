@@ -1,0 +1,10 @@
+package com.qa.TerrainGame;
+
+public class Player {
+	
+	public void walking() {
+		
+		System.out.println("walking..");
+	}
+
+}

@@ -1,0 +1,63 @@
+package com.qa.TerrainGame;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Player{
+	
+	private int locationX = 0;
+	private int locationY = 0;
+	
+	private static ArrayList<Player> player = new ArrayList<Player>();	
+	
+	
+public Player(int locationX, int locationY) {
+		
+		this.locationX = locationX;
+		this.locationY = locationY;
+		
+		player.add(this);
+		
+		
+		
+}
+		
+
+		
+		public float where() {
+	
+		distanceFrom = Math.sqrt( Math.pow( (featureX - locationX), 2 ) + Math.pow( (featureY - locationY), 2 ) ) ;
+
+			
+		}
+
+		public static ArrayList<Player> getPlayer() {
+			return player;
+		}
+
+		public static void setPlayer(ArrayList<Player> player) {
+			Player.player = player;
+		}
+
+		
+		public int getLocationX() {
+			
+			return locationX;
+		}
+		
+		public int getLocationY() {
+			
+			return locationY;
+			
+		}
+		
+
+		
+		
+	
+	
+
+	 
+}
+	
+
